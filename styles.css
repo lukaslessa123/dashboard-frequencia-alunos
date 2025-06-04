@@ -1,0 +1,241 @@
+/* Estilos CSS para o Dashboard de Frequência de Sementes */
+
+/* Estilo geral */
+.main .block-container {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+/* Cards de métricas */
+.metric-card {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 1.5rem;
+    border-radius: 15px;
+    color: white;
+    text-align: center;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    margin-bottom: 1rem;
+}
+
+.metric-card:hover {
+    transform: translateY(-5px);
+}
+
+.metric-value {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.metric-label {
+    font-size: 1rem;
+    opacity: 0.9;
+}
+
+/* Seções expansíveis */
+.stExpander > div:first-child {
+    background: linear-gradient(90deg, #4facfe 0%, #00f2fe 100%);
+    border-radius: 10px;
+    border: none;
+    font-weight: bold;
+    color: white;
+}
+
+/* Botões interativos */
+.stButton > button {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 0.75rem 1.5rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.stButton > button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+}
+
+/* Sidebar */
+.css-1d391kg {
+    background: linear-gradient(180deg, #2c3e50 0%, #3498db 100%);
+}
+
+/* Alertas coloridos */
+.success-box {
+    background: linear-gradient(135deg, #56ab2f 0%, #a8e6cf 100%);
+    padding: 1rem;
+    border-radius: 10px;
+    color: white;
+    margin: 1rem 0;
+}
+
+.warning-box {
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    padding: 1rem;
+    border-radius: 10px;
+    color: white;
+    margin: 1rem 0;
+}
+
+.info-box {
+    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+    padding: 1rem;
+    border-radius: 10px;
+    color: white;
+    margin: 1rem 0;
+}
+
+/* Tabelas */
+.dataframe {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* Animações */
+@keyframes fadeIn {
+    from { 
+        opacity: 0; 
+        transform: translateY(20px); 
+    }
+    to { 
+        opacity: 1; 
+        transform: translateY(0); 
+    }
+}
+
+.animated-content {
+    animation: fadeIn 0.6s ease-out;
+}
+
+/* Header personalizado */
+.header-gradient {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 2rem;
+    border-radius: 15px;
+    text-align: center;
+    margin-bottom: 2rem;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+}
+
+.header-title {
+    color: white;
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+.header-subtitle {
+    color: white;
+    margin: 0.5rem 0 0 0;
+    opacity: 0.9;
+}
+
+/* Cards de features */
+.feature-card {
+    padding: 2rem;
+    border-radius: 15px;
+    color: white;
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.feature-card-blue {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.feature-card-pink {
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+}
+
+.feature-card-cyan {
+    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+}
+
+/* Controles da sidebar */
+.sidebar-header {
+    background: rgba(255,255,255,0.1);
+    padding: 1rem;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.sidebar-title {
+    color: white;
+    text-align: center;
+}
+
+/* Landing page */
+.landing-container {
+    text-align: center;
+    padding: 3rem;
+}
+
+.landing-title {
+    font-size: 1.2rem;
+    color: #666;
+    margin: 2rem 0;
+}
+
+/* Footer */
+.footer-gradient {
+    text-align: center;
+    margin-top: 3rem;
+    padding: 2rem;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 15px;
+    color: white;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .metric-card {
+        padding: 1rem;
+    }
+    
+    .metric-value {
+        font-size: 2rem;
+    }
+    
+    .header-title {
+        font-size: 2rem;
+    }
+    
+    .feature-card {
+        padding: 1.5rem;
+    }
+}
+
+/* Estados de hover para interatividade */
+.metric-card:hover,
+.feature-card:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease;
+}
+
+/* Melhorias para acessibilidade */
+.success-box,
+.warning-box,
+.info-box {
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+/* Estilo para botões de download */
+.download-button {
+    background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.download-button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
